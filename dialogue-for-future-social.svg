@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+ <rect width="1080" height="1350" fill="#F4F1EA"/>
+ <rect width="1080" height="26" fill="#182C28"/>
+ <g font-family="DejaVu Sans,sans-serif">
+  <text x="76" y="101" font-size="25" font-weight="700" fill="#182C28" letter-spacing="2.4">CONCEPT DE COMUNICARE / NEOFICIAL</text>
+  <text x="76" y="189" font-size="25" font-weight="700" fill="#D75D45" letter-spacing="1.3">01  —  DIALOGUE FOR THE FUTURE!</text>
+  <text x="70" y="330" font-size="84" font-weight="800" fill="#182C28" letter-spacing="-3">TINERII AU</text>
+  <text x="70" y="429" font-size="84" font-weight="800" fill="#182C28" letter-spacing="-3">O VOCE.</text>
+  <text x="70" y="552" font-size="82" font-weight="800" fill="#D75D45" letter-spacing="-2">CINE O</text>
+  <text x="70" y="647" font-size="82" font-weight="800" fill="#D75D45" letter-spacing="-2">ASCULTĂ?</text>
+  <path d="M176 725 H631 Q685 725 685 778 V951 Q685 1005 631 1005 H397 L333 1073 L320 1005 H176 Q120 1005 120 951 V780 Q120 725 176 725 Z" fill="#DAE7B6" stroke="#182C28" stroke-width="8"/>
+  <path d="M554 822 H880 Q938 822 938 882 V1062 Q938 1118 880 1118 H802 L845 1198 L715 1118 H554 Q495 1118 495 1062 V1045" fill="#F6C2B8" stroke="#182C28" stroke-width="8"/>
+  <path d="M238 844 H559 M238 905 H464" stroke="#182C28" stroke-width="18" stroke-linecap="round"/>
+  <path d="M622 940 H835 M622 1001 H772" stroke="#182C28" stroke-width="18" stroke-linecap="round"/>
+  <text x="76" y="1276" font-size="26" font-weight="700" fill="#182C28">O întrebare care poate deschide o conversație.</text>
+  <text x="876" y="1276" font-size="22" font-weight="700" fill="#D75D45">A.C.</text>
+ </g>
+</svg>
