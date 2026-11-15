@@ -9,6 +9,10 @@
   let current=0;
   function go(index,focus=true){
     index=Math.max(0,Math.min(steps.length-1,index));
+    if(current!==index){
+      const previousVideo=steps[current]?.querySelector('video');
+      if(previousVideo&&!previousVideo.paused)previousVideo.pause();
+    }
     current=index;
     steps.forEach((step,i)=>{
       step.hidden=i!==index;
@@ -41,19 +45,32 @@
   });
   document.addEventListener('keydown',e=>{
     const el=document.activeElement;
-    if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA','SELECT'].includes(el.tagName)||el.isContentEditable)return;
+    if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','TEXTAREA','SELECT','A','BUTTON','VIDEO','AUDIO','IFRAME'].includes(el.tagName)||el.isContentEditable)return;
     if(e.key==='ArrowRight'&&current<steps.length-1){e.preventDefault();go(current+1)}
     if(e.key==='ArrowLeft'&&current>0){e.preventDefault();go(current-1)}
   });
   const tabs=[...document.querySelectorAll('.idea-tab')];
-  tabs.forEach(tab=>tab.addEventListener('click',()=>{
-    tabs.forEach(t=>{
-      const selected=t===tab;
-      t.classList.toggle('is-selected',selected);
-      t.setAttribute('aria-selected',String(selected));
-      document.getElementById(t.dataset.panel).hidden=!selected;
+  function selectTab(selectedTab,focus=false){
+    tabs.forEach(tab=>{
+      const selected=tab===selectedTab;
+      tab.classList.toggle('is-selected',selected);
+      tab.setAttribute('aria-selected',String(selected));
+      tab.tabIndex=selected?0:-1;
+      document.getElementById(tab.dataset.panel).hidden=!selected;
     });
-  }));
+    if(focus)selectedTab.focus();
+  }
+  tabs.forEach((tab,index)=>{
+    tab.addEventListener('click',()=>selectTab(tab));
+    tab.addEventListener('keydown',event=>{
+      let nextIndex=null;
+      if(event.key==='ArrowRight')nextIndex=(index+1)%tabs.length;
+      if(event.key==='ArrowLeft')nextIndex=(index+tabs.length-1)%tabs.length;
+      if(event.key==='Home')nextIndex=0;
+      if(event.key==='End')nextIndex=tabs.length-1;
+      if(nextIndex!==null){event.preventDefault();event.stopPropagation();selectTab(tabs[nextIndex],true);}
+    });
+  });
   window.addEventListener('hashchange',()=>{
     const index=steps.findIndex(step=>'#'+step.id===location.hash);
     if(index>=0&&index!==current)go(index,false);

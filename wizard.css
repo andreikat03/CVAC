@@ -60,3 +60,87 @@ main{flex:1;min-height:0;position:relative;overflow:hidden}
 }
 @media(max-width:350px){.app-dot{min-width:9px;min-height:9px}.app-dot.active{width:20px}.app-controls{gap:2px}}
 @media(prefers-reduced-motion:reduce){.app-step.is-active{animation:none}}
+/* Revision based on applicant feedback */
+.hero h1{font-size:clamp(48px,6.7vw,99px)!important;max-width:12.5ch}
+.roles-stack{display:flex;flex-direction:column;gap:12px;margin:32px 0}
+.roles-stack span{display:block;border-top:1px solid rgba(23,40,34,.27);padding:11px 0;font-weight:700;letter-spacing:.04em;font-size:14px}
+.question-art{aspect-ratio:4/5;min-height:280px;background:#dce8b7;border:9px solid #172822;border-radius:3px;padding:clamp(18px,3vw,35px);display:flex;flex-direction:column;justify-content:space-between;box-shadow:12px 14px 0 rgba(23,40,34,.09)}
+.art-overline,.art-bottom{font-size:clamp(10px,1vw,14px);letter-spacing:.12em;font-weight:800}
+.art-question{font-family:'Space Grotesk',Arial,sans-serif;font-weight:800;letter-spacing:-.085em;line-height:.91;font-size:clamp(40px,5.4vw,82px)}
+.art-accent{color:#d65d44}.art-rule{width:100%;height:8px;background:#d65d44;transform:rotate(-6deg)}
+.story-text .story-panel{min-height:240px;aspect-ratio:9/16;padding:clamp(12px,2vw,25px);background:#dce8b7;color:#172822;display:flex;flex-direction:column;justify-content:space-between}
+.story-text:nth-child(2) .story-panel{background:#172822;color:#f4f1ea}.story-text:nth-child(3) .story-panel{background:#d65d44;color:#fff}
+.story-panel small{letter-spacing:.12em;font-weight:800}.story-panel strong{font-size:clamp(19px,3vw,43px);line-height:1;letter-spacing:-.07em}.story-panel span{font-size:12px}
+.final .meet-button{margin-left:12px;background:#fff;color:#172822}
+@media(max-width:700px){.hero h1{font-size:clamp(40px,9vw,60px)!important}.question-art{min-height:260px;max-height:330px;max-width:330px;margin:auto}.art-question{font-size:clamp(44px,11vw,70px)}.final .meet-button{margin-left:0;margin-top:12px}.story-text .story-panel{min-height:165px;padding:9px}.story-panel strong{font-size:clamp(15px,4vw,28px)}.story-panel small,.story-panel span{font-size:9px}}
+
+/* Applicant review: smaller first headline, uncluttered layout */
+.hero h1{font-size:clamp(44px,5.35vw,78px)!important;max-width:15ch;line-height:1.03}
+.hero .wrap{padding-top:24px;padding-bottom:24px}
+.hero .outline{flex-wrap:wrap}
+#despre .experience{align-items:start}
+#despre .fact{min-height:125px}
+#proiecte .proof-card--green{background:#dce8b7}
+#proiecte .proof-card--green h3{font-size:clamp(29px,3vw,45px);line-height:1.06}
+#proiecte .proof-card--green p{max-width:50ch}
+.video-fallback{font-size:12px!important;margin:8px 20px 0}
+.video-fallback a{text-decoration:underline;text-underline-offset:3px}
+.question-art{width:100%;max-width:370px;min-height:350px;box-sizing:border-box}
+.campaign-description h3{font-size:clamp(32px,4vw,58px);line-height:1.04}
+.story-text .story-panel{box-sizing:border-box}
+.story-text .story-panel strong{overflow-wrap:normal}
+.final .meet-button{display:inline-flex;align-items:center}
+@media(max-width:700px){
+ .hero h1{font-size:clamp(39px,9.2vw,58px)!important;max-width:13ch}
+ .hero .wrap{padding-top:28px;padding-bottom:28px}
+ .hero .noise{opacity:.12}
+ .app-step .campaign{grid-template-columns:1fr}
+ .question-art{max-width:300px;min-height:320px}
+ .art-question{font-size:clamp(42px,12vw,67px)}
+ .story-text .story-panel{min-height:185px}
+ .story-panel strong{font-size:clamp(15px,4.4vw,25px)}
+ .final .meet-button{margin-left:0}
+}
+
+/* Launch polish: accessible controls + one compact confirmed project */
+:root { --app-orange-strong: #ac3d29; }
+.sectionnum, .app-counter { color: var(--app-orange-strong); }
+.app-controls .app-dots { gap: 0; }
+.app-dot, .app-dot.active {
+  position: relative; width: 30px; height: 40px; min-width:30px; min-height:40px;
+  border-radius:0; background:transparent; transition:none;
+}
+.app-dot::before {
+  content:''; display:block; position:absolute; top:50%;left:50%;
+  transform:translate(-50%,-50%);width:10px;height:10px;
+  border-radius:10px;background:#aab5a8;transition:width .2s,background .2s;
+}
+.app-dot.active::before { width:27px;background:#D65D44; }
+.app-dot:hover::before {background:#9c4837}
+.app-dot:focus-visible {outline:2px solid #ac3d29;outline-offset:0}
+.other-project {
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:9px 18px;
+  padding:16px 4px 0;margin-top:15px;border-top:1px solid rgba(23,40,34,.24);
+  font-size:13px;line-height:1.4;
+}
+.other-project-label {color:#a33f2c; font-size:10px;font-weight:800;letter-spacing:1.4px}
+.other-project strong {font-size:16px}
+.other-project>span:last-child {color:#40574c;flex:1 1 260px}
+.app-step:focus-visible{outline:0}
+.video-fallback a:focus-visible,.source-link:focus-visible{outline:3px solid var(--app-orange-strong);outline-offset:3px}
+@media(max-width:700px){
+  .app-dot, .app-dot.active {width:27px;min-width:27px;height:40px;min-height:40px}
+  .app-dot::before {width:8px;height:8px}
+  .app-dot.active::before {width:23px;height:8px}
+  .app-controls {gap:0}
+  .other-project{padding:14px 2px 1px;gap:6px 12px}
+}
+@media(max-width:350px){
+  .app-dot,.app-dot.active{width:26px;min-width:26px}
+  .app-dot.active::before{width:22px}
+}
+@media(prefers-reduced-motion:reduce){.app-dot::before{transition:none}}
+/* Explicit font declarations: replace invalid inherited font shorthand in legacy CSS. */
+.app-back,.app-next{font-family:inherit;font-size:14px;font-weight:700;line-height:1.2}
+@media(max-width:700px){.app-back,.app-next{font-size:13px}}
+@media(max-width:350px){.app-back,.app-next{font-size:12px}}
