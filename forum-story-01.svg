@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" role="img" aria-label="Story 1: Scena se repetă">
+<rect width="360" height="640" fill="#F4F1EA"/>
+<rect x="20" y="20" width="320" height="600" fill="none" stroke="#172822" stroke-opacity=".35"/>
+<text x="34" y="68" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" letter-spacing="2" fill="#172822">01 / PRIVEȘTI</text>
+<path d="M78 174 L180 123 L283 174 V374 H78Z" fill="#DAE7B6" stroke="#172822" stroke-width="8"/><circle cx="180" cy="220" r="29" fill="#172822"/><path d="M123 336 Q135 258 180 258 Q225 258 237 336Z" fill="#172822"/><path d="M48 379 H315" stroke="#D65D44" stroke-width="12"/>
+<text x="34" y="458" font-family="Arial,Helvetica,sans-serif" font-size="47" font-weight="900" letter-spacing="-2" fill="#172822"><tspan x="34" dy="0">SCENA</tspan><tspan x="34" dy="50">SE REPETĂ.</tspan></text>
+<path d="M34 533 H326" stroke="#172822" stroke-width="3"/>
+<text x="34" y="580" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#172822">Ceva nu e în regulă.</text>
+<text x="34" y="610" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" letter-spacing="1.5" fill="#172822">STUDIU CREATIV · NEOFICIAL</text>
+</svg>

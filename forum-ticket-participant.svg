@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="900" viewBox="0 0 680 900" role="img" aria-label="Poster concept pentru teatru forum. Rol: PARTICIPANT">
+<rect width="680" height="900" fill="#172822"/>
+<rect x="31" y="30" width="618" height="840" fill="none" stroke="#DAE7B6" stroke-opacity=".35" stroke-width="1.5"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#F4F1EA">
+<text x="59" y="83" font-size="19" font-weight="bold" letter-spacing="3.2">STUDIU CREATIV  /  TEATRU FORUM</text>
+<text x="58" y="168" font-size="78" font-weight="900" letter-spacing="-5">UN BILET.</text>
+<text x="58" y="238" font-size="74" font-weight="900" letter-spacing="-5">ALT FINAL<tspan fill="#D65D44">.</tspan></text>
+</g>
+<g transform="translate(40 286)">
+<rect x="15" y="15" width="585" height="390" fill="#0b1613" opacity=".3" />
+<path d="M35 0 H565 V128 a28 28 0 0 0 0 56 V390 H35 V184 a28 28 0 0 0 0 -56 Z" fill="#DAE7B6" />
+<path d="M35 0 H565 V128 a28 28 0 0 0 0 56 V390 H35 V184 a28 28 0 0 0 0 -56 Z" fill="none" stroke="#172822" stroke-width="4" />
+<text x="66" y="52" font-family="Arial" font-size="20" font-weight="bold" fill="#172822" letter-spacing="4">BILET / NUMĂRUL 001</text>
+<path d="M64 71 H535" stroke="#172822" stroke-opacity=".5" stroke-dasharray="8 9" stroke-width="2"/>
+<text x="66" y="121" font-family="Arial" font-size="18" fill="#172822" letter-spacing="2.6">ROLUL TĂU</text>
+<text x="64" y="193" font-family="Arial" font-size="45" font-weight="900" fill="#D65D44" letter-spacing="-2">PARTICIPANT</text>
+<path d="M64 215 H535" stroke="#172822" stroke-opacity=".55" stroke-width="2" />
+<rect x="65" y="245" width="470" height="111" rx="3" fill="#172822"/>
+<g transform="translate(0 -170)"><path d="M280 512 L320 468 L360 512 L335 512 L335 548 L305 548 L305 512Z" fill="#D65D44"/></g>
+<text x="144" y="297" font-family="Arial" font-size="22" font-weight="bold" fill="#F4F1EA">SCENA TE CHEAMĂ.</text>
+<text x="144" y="323" font-family="Arial" font-size="14" fill="#DAE7B6">Scena poate continua altfel.</text>
+</g>
+<g fill="#F4F1EA" font-family="Arial,Helvetica,sans-serif">
+<text x="58" y="754" font-size="24" font-weight="bold">ÎN SCENA ASTA, PUBLICUL ARE REPLICĂ.</text>
+<path d="M59 774 H621" stroke="#D65D44" stroke-width="7"/>
+<text x="59" y="825" font-size="15" letter-spacing="2.2">PROPUNERE PERSONALĂ · NEOFICIALĂ</text>
+</g></svg>

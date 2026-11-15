@@ -71,6 +71,20 @@
       if(nextIndex!==null){event.preventDefault();event.stopPropagation();selectTab(tabs[nextIndex],true);}
     });
   });
+  // Campaign: one purposeful interaction, not a fictitious official event.
+  const ticketButton=document.getElementById('ticketToggle');
+  const ticketImage=document.getElementById('campaignPoster');
+  const ticketState=document.getElementById('ticketState');
+  if(ticketButton&&ticketImage&&ticketState){
+    ticketButton.addEventListener('click',()=>{
+      const on=ticketButton.getAttribute('aria-pressed')!=='true';
+      ticketButton.setAttribute('aria-pressed',String(on));
+      ticketButton.firstChild.textContent=on?'Revino la spectator ':'Schimbă rolul ';
+      ticketImage.src=on?'assets/forum-ticket-participant.svg':'assets/forum-ticket-spectator.svg';
+      ticketImage.alt=on?'Poster interactiv: biletul și-a schimbat rolul în Participant.':'Poster interactiv: biletul indică rolul Spectator.';
+      ticketState.textContent=on?'Biletul tău: participant — poți interveni în scenă.':'Biletul tău: spectator';
+    });
+  }
   window.addEventListener('hashchange',()=>{
     const index=steps.findIndex(step=>'#'+step.id===location.hash);
     if(index>=0&&index!==current)go(index,false);
