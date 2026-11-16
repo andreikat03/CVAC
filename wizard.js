@@ -7,7 +7,7 @@
   const counter=document.getElementById('stepCounter');
   const hint=document.querySelector('.app-hint');
   let current=0;
-  function go(index,focus=true){
+  function go(index,focus=true,historyMode="push"){
     index=Math.max(0,Math.min(steps.length-1,index));
     if(current!==index){
       const previousVideo=steps[current]?.querySelector('video');
@@ -30,8 +30,20 @@
     counter.textContent=String(index+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0');
     hint.textContent=index===steps.length-1?'Ai ajuns la final. Mulțumesc!':'Folosește Next pentru a descoperi candidatura · ← →';
     if(focus)steps[index].focus({preventScroll:true});
-    if(location.hash!=='#'+steps[index].id)history.replaceState(null,'','#'+steps[index].id);
+    if(location.hash!=='#'+steps[index].id){
+      const method=historyMode==='replace'?'replaceState':historyMode==='none'?null:'pushState';
+      if(method)history[method]({step:index},'','#'+steps[index].id);
+    }
+    updateScrollCue();
   }
+  const scrollCue=document.getElementById('scrollCue');
+  function updateScrollCue(){
+    if(!scrollCue)return;
+    const step=steps[current];
+    scrollCue.hidden=step.scrollHeight-step.clientHeight-step.scrollTop<32;
+  }
+  steps.forEach(step=>step.addEventListener('scroll',updateScrollCue,{passive:true}));
+  window.addEventListener('resize',updateScrollCue);
   next.addEventListener('click',()=>go(current+1));
   back.addEventListener('click',()=>go(current-1));
   dots.forEach(dot=>dot.addEventListener('click',()=>go(Number(dot.dataset.goto))));
@@ -87,8 +99,13 @@
   }
   window.addEventListener('hashchange',()=>{
     const index=steps.findIndex(step=>'#'+step.id===location.hash);
-    if(index>=0&&index!==current)go(index,false);
+    if(index>=0&&index!==current)go(index,false,'none');
+  });
+  window.addEventListener('popstate',()=>{
+    const index=steps.findIndex(step=>'#'+step.id===location.hash);
+    go(index<0?0:index,false,'none');
   });
   const start=steps.findIndex(step=>'#'+step.id===location.hash);
-  go(start<0?0:start,false);
+  go(start<0?0:start,false,'replace');
+  requestAnimationFrame(updateScrollCue);
 })();

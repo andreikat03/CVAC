@@ -269,3 +269,22 @@ main{flex:1;min-height:0;position:relative;overflow:hidden}
  #idee .campaign-description .copy{padding:10px 13px}
  #idee .note{padding:7px 10px;margin-top:7px}
 }
+
+/* V3 Release Candidate: accessibility, mobile touch and discoverability */
+.app-dots{gap:3px}
+.app-dot{position:relative;width:35px!important;min-width:35px!important;height:44px!important;min-height:44px!important;background:transparent!important;display:grid;place-items:center;touch-action:manipulation}
+.app-dot::after{content:"";display:block;width:11px;height:11px;border-radius:100px;background:#c2c6b8;transition:width .2s,background .2s}
+.app-dot.active::after{width:25px;border-radius:10px;background:#d65d44}
+.app-dot:focus-visible{outline:2px solid #d65d44;outline-offset:-2px}
+.scroll-cue{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:5;background:#172822;color:white;font:700 11px/1.2 Arial,sans-serif;padding:9px 13px;border-radius:40px;pointer-events:none;box-shadow:0 2px 12px #17282222}
+.scroll-cue[hidden]{display:none}
+.campaign-plan{margin:17px 0 8px;padding:19px;background:#e4e9d8;border-left:4px solid #d65d44;color:#172822}
+.campaign-plan h3{font-size:20px;margin:0 0 12px}
+.campaign-plan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px}
+.campaign-plan-grid p{margin:0;font-size:13px;line-height:1.5}
+.campaign-plan-grid b,.campaign-plan-grid span{display:block}
+.campaign-plan-grid b{margin-bottom:3px}
+.campaign-plan-disclaimer{font-size:11px;margin:12px 0 0;opacity:.75}
+@media(max-width:700px){.app-dots{gap:0}.app-dot{width:29px!important;min-width:29px!important}.app-dot::after{width:9px;height:9px}.app-dot.active::after{width:19px}.app-controls{padding-left:7px;padding-right:7px}.app-back,.app-next{padding-left:7px;padding-right:7px}.campaign-plan-grid{grid-template-columns:1fr}.scroll-cue{bottom:8px}}
+@media(max-width:360px){.app-dot{width:25px!important;min-width:25px!important}.app-back,.app-next{font-size:11px}.app-next{min-width:65px}}
+@media(prefers-reduced-motion:reduce){.app-dot::after{transition:none}}

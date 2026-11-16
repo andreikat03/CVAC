@@ -1,0 +1,252 @@
+[
+  {
+    "test": "320x700 DOM loaded",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 initial",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 next",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 hash back",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 hash forward",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 jump",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 ticket",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 stories",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "320x700 no horizontal overflow",
+    "pass": true,
+    "detail": "[320, 320]"
+  },
+  {
+    "test": "320x700 JS errors",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "test": "390x844 DOM loaded",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 initial",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 next",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 hash back",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 hash forward",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 jump",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 ticket",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 stories",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "390x844 no horizontal overflow",
+    "pass": true,
+    "detail": "[390, 390]"
+  },
+  {
+    "test": "390x844 JS errors",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "test": "768x1024 DOM loaded",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 initial",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 next",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 hash back",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 hash forward",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 jump",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 ticket",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 stories",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "768x1024 no horizontal overflow",
+    "pass": true,
+    "detail": "[768, 768]"
+  },
+  {
+    "test": "768x1024 JS errors",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "test": "1366x768 DOM loaded",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 initial",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 next",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 hash back",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 hash forward",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 jump",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 ticket",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 stories",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1366x768 no horizontal overflow",
+    "pass": true,
+    "detail": "[1366, 1366]"
+  },
+  {
+    "test": "1366x768 JS errors",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "test": "1920x1080 DOM loaded",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 initial",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 next",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 hash back",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 hash forward",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 jump",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 ticket",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 stories",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "test": "1920x1080 no horizontal overflow",
+    "pass": true,
+    "detail": "[1920, 1920]"
+  },
+  {
+    "test": "1920x1080 JS errors",
+    "pass": true,
+    "detail": "[]"
+  }
+]
