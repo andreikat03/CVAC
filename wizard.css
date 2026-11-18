@@ -436,3 +436,5 @@ main{flex:1;min-height:0;position:relative;overflow:hidden}
 .email-dialog #emailCopyStatus{min-height:22px;font-size:12px;margin:6px 0 0;color:#285943}
 .email-dialog .email-dialog-note{font-size:12px;margin:15px 0 0;color:#5a6f61}
 @media(max-width:390px){.email-dialog-actions{grid-template-columns:1fr}.email-dialog-copy-row{flex-wrap:wrap}.email-dialog-copy-row input{flex-basis:100%}.email-dialog-copy-row button{width:100%}}
+
+.email-dialog-link{align-items:flex-start;justify-content:flex-start;line-height:1.35;font-size:13px;min-height:56px}.email-dialog-link span[aria-hidden="true"]{margin-left:auto;flex:none;padding-left:8px}.email-dialog-link{white-space:normal}@media(max-width:520px){.email-dialog-actions{grid-template-columns:1fr}}
