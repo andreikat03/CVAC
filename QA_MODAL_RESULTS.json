@@ -1,0 +1,362 @@
+[
+  {
+    "test": "desktop 5 chapters present",
+    "pass": true
+  },
+  {
+    "test": "desktop no CV PDF links",
+    "pass": true
+  },
+  {
+    "test": "desktop no mention Scrisoare PDF",
+    "pass": true
+  },
+  {
+    "test": "desktop ideas visible",
+    "pass": true
+  },
+  {
+    "test": "desktop receipt visible",
+    "pass": true
+  },
+  {
+    "test": "desktop zoom is a BUTTON",
+    "pass": true
+  },
+  {
+    "test": "desktop dialog appears",
+    "pass": true
+  },
+  {
+    "test": "desktop dialog image loaded",
+    "pass": true
+  },
+  {
+    "test": "desktop page did not navigate",
+    "pass": true
+  },
+  {
+    "test": "desktop dialog large",
+    "pass": true
+  },
+  {
+    "test": "desktop zoom 150% toggles",
+    "pass": true
+  },
+  {
+    "test": "desktop closes with Escape",
+    "pass": true
+  },
+  {
+    "test": "desktop choose fem",
+    "pass": true
+  },
+  {
+    "test": "desktop fem image loaded",
+    "pass": true
+  },
+  {
+    "test": "desktop fem dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "desktop fem X closes",
+    "pass": true
+  },
+  {
+    "test": "desktop choose viitor",
+    "pass": true
+  },
+  {
+    "test": "desktop viitor image loaded",
+    "pass": true
+  },
+  {
+    "test": "desktop viitor dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "desktop viitor X closes",
+    "pass": true
+  },
+  {
+    "test": "desktop choose horror",
+    "pass": true
+  },
+  {
+    "test": "desktop horror image loaded",
+    "pass": true
+  },
+  {
+    "test": "desktop horror dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "desktop horror X closes",
+    "pass": true
+  },
+  {
+    "test": "desktop second idea visible",
+    "pass": true
+  },
+  {
+    "test": "desktop no horizontal body overflow",
+    "pass": true
+  },
+  {
+    "test": "desktop finale visible",
+    "pass": true
+  },
+  {
+    "test": "desktop no CV footer",
+    "pass": true
+  },
+  {
+    "test": "desktop mail contact stays",
+    "pass": true
+  },
+  {
+    "test": "desktop no runtime errors",
+    "pass": true
+  },
+  {
+    "test": "mobile 5 chapters present",
+    "pass": true
+  },
+  {
+    "test": "mobile no CV PDF links",
+    "pass": true
+  },
+  {
+    "test": "mobile no mention Scrisoare PDF",
+    "pass": true
+  },
+  {
+    "test": "mobile ideas visible",
+    "pass": true
+  },
+  {
+    "test": "mobile receipt visible",
+    "pass": true
+  },
+  {
+    "test": "mobile zoom is a BUTTON",
+    "pass": true
+  },
+  {
+    "test": "mobile dialog appears",
+    "pass": true
+  },
+  {
+    "test": "mobile dialog image loaded",
+    "pass": true
+  },
+  {
+    "test": "mobile page did not navigate",
+    "pass": true
+  },
+  {
+    "test": "mobile dialog large",
+    "pass": true
+  },
+  {
+    "test": "mobile zoom 150% toggles",
+    "pass": true
+  },
+  {
+    "test": "mobile closes with Escape",
+    "pass": true
+  },
+  {
+    "test": "mobile choose fem",
+    "pass": true
+  },
+  {
+    "test": "mobile fem image loaded",
+    "pass": true
+  },
+  {
+    "test": "mobile fem dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "mobile fem X closes",
+    "pass": true
+  },
+  {
+    "test": "mobile choose viitor",
+    "pass": true
+  },
+  {
+    "test": "mobile viitor image loaded",
+    "pass": true
+  },
+  {
+    "test": "mobile viitor dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "mobile viitor X closes",
+    "pass": true
+  },
+  {
+    "test": "mobile choose horror",
+    "pass": true
+  },
+  {
+    "test": "mobile horror image loaded",
+    "pass": true
+  },
+  {
+    "test": "mobile horror dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "mobile horror X closes",
+    "pass": true
+  },
+  {
+    "test": "mobile second idea visible",
+    "pass": true
+  },
+  {
+    "test": "mobile no horizontal body overflow",
+    "pass": true
+  },
+  {
+    "test": "mobile finale visible",
+    "pass": true
+  },
+  {
+    "test": "mobile no CV footer",
+    "pass": true
+  },
+  {
+    "test": "mobile mail contact stays",
+    "pass": true
+  },
+  {
+    "test": "mobile no runtime errors",
+    "pass": true
+  },
+  {
+    "test": "small 5 chapters present",
+    "pass": true
+  },
+  {
+    "test": "small no CV PDF links",
+    "pass": true
+  },
+  {
+    "test": "small no mention Scrisoare PDF",
+    "pass": true
+  },
+  {
+    "test": "small ideas visible",
+    "pass": true
+  },
+  {
+    "test": "small receipt visible",
+    "pass": true
+  },
+  {
+    "test": "small zoom is a BUTTON",
+    "pass": true
+  },
+  {
+    "test": "small dialog appears",
+    "pass": true
+  },
+  {
+    "test": "small dialog image loaded",
+    "pass": true
+  },
+  {
+    "test": "small page did not navigate",
+    "pass": true
+  },
+  {
+    "test": "small dialog large",
+    "pass": true
+  },
+  {
+    "test": "small zoom 150% toggles",
+    "pass": true
+  },
+  {
+    "test": "small closes with Escape",
+    "pass": true
+  },
+  {
+    "test": "small choose fem",
+    "pass": true
+  },
+  {
+    "test": "small fem image loaded",
+    "pass": true
+  },
+  {
+    "test": "small fem dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "small fem X closes",
+    "pass": true
+  },
+  {
+    "test": "small choose viitor",
+    "pass": true
+  },
+  {
+    "test": "small viitor image loaded",
+    "pass": true
+  },
+  {
+    "test": "small viitor dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "small viitor X closes",
+    "pass": true
+  },
+  {
+    "test": "small choose horror",
+    "pass": true
+  },
+  {
+    "test": "small horror image loaded",
+    "pass": true
+  },
+  {
+    "test": "small horror dialog matching image",
+    "pass": true
+  },
+  {
+    "test": "small horror X closes",
+    "pass": true
+  },
+  {
+    "test": "small second idea visible",
+    "pass": true
+  },
+  {
+    "test": "small no horizontal body overflow",
+    "pass": true
+  },
+  {
+    "test": "small finale visible",
+    "pass": true
+  },
+  {
+    "test": "small no CV footer",
+    "pass": true
+  },
+  {
+    "test": "small mail contact stays",
+    "pass": true
+  },
+  {
+    "test": "small no runtime errors",
+    "pass": true
+  }
+]

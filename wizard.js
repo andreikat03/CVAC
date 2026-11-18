@@ -137,12 +137,47 @@
   };
   const receiptImg=document.getElementById('receiptMain');
   const receiptButtons=[...document.querySelectorAll('.receipt-choice')];
+  const receiptZoomButton=document.getElementById('receiptFull');
+  const receiptDialog=document.getElementById('receiptDialog');
+  const receiptDialogImage=document.getElementById('receiptDialogImage');
+  const receiptDialogTitle=document.getElementById('receiptDialogTitle');
+  const receiptDialogViewport=document.getElementById('receiptDialogViewport');
+  const receiptDialogZoom=document.getElementById('receiptDialogZoom');
+  const receiptDialogClose=document.getElementById('receiptDialogClose');
+  function openReceiptModal(){
+    if(!receiptDialog||!receiptImg)return;
+    receiptDialogImage.src=receiptImg.src;
+    receiptDialogImage.alt=receiptImg.alt;
+    receiptDialogTitle.textContent=document.getElementById('receiptTitle').textContent+' · Bon de schimbare';
+    receiptDialog.classList.remove('is-zoomed');
+    receiptDialogZoom.setAttribute('aria-pressed','false');
+    receiptDialogZoom.textContent='Mărește 150%';
+    receiptDialogViewport.scrollTop=0;
+    receiptDialogViewport.scrollLeft=0;
+    if(typeof receiptDialog.showModal==='function')receiptDialog.showModal();
+    else receiptDialog.setAttribute('open','');
+    receiptDialogClose.focus();
+  }
+  receiptZoomButton?.addEventListener('click',openReceiptModal);
+  receiptImg?.addEventListener('click',openReceiptModal);
+  receiptDialogClose?.addEventListener('click',()=>receiptDialog.close());
+  receiptDialogZoom?.addEventListener('click',()=>{
+    const isZoomed=receiptDialog.classList.toggle('is-zoomed');
+    receiptDialogZoom.setAttribute('aria-pressed',String(isZoomed));
+    receiptDialogZoom.textContent=isZoomed?'Potrivește pe ecran':'Mărește 150%';
+    receiptDialogViewport.scrollLeft=0;
+  });
+  receiptDialog?.addEventListener('click',event=>{
+    if(event.target===receiptDialog)receiptDialog.close();
+  });
+  receiptDialog?.addEventListener('close',()=>receiptZoomButton?.focus({preventScroll:true}));
+
   receiptButtons.forEach(button=>button.addEventListener('click',()=>{
     const data=receipts[button.dataset.receipt];
     if(!data)return;
     receiptButtons.forEach(b=>{const active=b===button;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
     receiptImg.src=data.img;receiptImg.alt=data.alt;
-    document.getElementById('receiptFull').href=data.img;
+    // The preview now opens a modal inside the CV, never a data: URL.
     document.getElementById('receiptTitle').textContent=data.title;
     document.getElementById('receiptFact').textContent=data.fact;
     document.getElementById('receiptAfter').textContent=data.after;

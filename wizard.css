@@ -394,3 +394,21 @@ main{flex:1;min-height:0;position:relative;overflow:hidden}
 #idee.section{padding-top:30px;padding-bottom:30px}
 .receipt-stage img{max-height:465px}
 @media(max-width:700px){.receipt-stage img{max-height:340px}#idee.section{padding-top:23px}}
+
+/* V4: receipt enlarges inside a native accessible modal; no external data URL. */
+.receipt-zoom-link{display:inline-block;background:none;border:0;padding:4px 8px;cursor:zoom-in;text-decoration:underline;font-family:inherit}
+#receiptMain{cursor:zoom-in}
+.receipt-dialog{box-sizing:border-box;width:min(720px,calc(100vw - 24px));height:min(94dvh,1100px);max-width:none;max-height:none;border:0;border-radius:16px;background:#f4f1ea;color:#172822;padding:0;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.38)}
+.receipt-dialog::backdrop{background:rgba(11,25,20,.84);backdrop-filter:blur(5px)}
+.receipt-dialog-shell{height:100%;display:flex;flex-direction:column;min-height:0}
+.receipt-dialog-bar{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 17px;background:#dce6d4;border-bottom:1px solid rgba(23,40,34,.16)}
+.receipt-dialog-bar strong{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(13px,2.5vw,17px);line-height:1.2}
+.receipt-dialog-actions{display:flex;gap:8px;align-items:center}
+.receipt-dialog-actions button{background:#172822;color:#fff;border:1px solid #172822;border-radius:8px;padding:9px 12px;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.receipt-dialog-actions .receipt-dialog-close{font-size:19px;line-height:1;width:40px;height:40px;padding:0}
+.receipt-dialog-viewport{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:20px 16px 30px;display:block;text-align:center}
+.receipt-dialog-viewport img{display:block;width:min(440px,100%);height:auto;max-width:none;max-height:none;margin:0 auto;background:#fffefa;box-shadow:0 12px 32px rgba(23,40,34,.16)}
+.receipt-dialog.is-zoomed .receipt-dialog-viewport img{width:660px;margin-left:0;margin-right:0}
+.receipt-dialog-hint{flex:0 0 auto;text-align:center;font-size:11px;color:#53665d;margin:0;padding:9px 10px;background:#f4f1ea;border-top:1px solid rgba(23,40,34,.1)}
+@media(max-width:500px){.receipt-dialog{height:94dvh;width:calc(100vw - 12px);border-radius:11px}.receipt-dialog-bar{padding:10px 11px}.receipt-dialog-zoom{font-size:11px!important;padding:9px!important}.receipt-dialog-viewport{padding:14px 9px 23px}.receipt-dialog-hint{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.receipt-dialog *{scroll-behavior:auto!important}}
