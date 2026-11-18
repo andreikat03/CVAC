@@ -1,0 +1,146 @@
+[
+  {
+    "name": "desktop page loaded",
+    "pass": true
+  },
+  {
+    "name": "desktop idea step shown",
+    "pass": true
+  },
+  {
+    "name": "desktop 2 tabs",
+    "pass": true
+  },
+  {
+    "name": "desktop default receipt image",
+    "pass": true
+  },
+  {
+    "name": "desktop receipt switches",
+    "pass": true
+  },
+  {
+    "name": "desktop new receipt image",
+    "pass": true
+  },
+  {
+    "name": "desktop second proposal visible",
+    "pass": true
+  },
+  {
+    "name": "desktop first hidden",
+    "pass": true
+  },
+  {
+    "name": "desktop no viewport horizontal overflow",
+    "pass": true
+  },
+  {
+    "name": "desktop next works",
+    "pass": true
+  },
+  {
+    "name": "desktop back works",
+    "pass": true
+  },
+  {
+    "name": "desktop no runtime JS errors",
+    "pass": true
+  },
+  {
+    "name": "mobile page loaded",
+    "pass": true
+  },
+  {
+    "name": "mobile idea step shown",
+    "pass": true
+  },
+  {
+    "name": "mobile 2 tabs",
+    "pass": true
+  },
+  {
+    "name": "mobile default receipt image",
+    "pass": true
+  },
+  {
+    "name": "mobile receipt switches",
+    "pass": true
+  },
+  {
+    "name": "mobile new receipt image",
+    "pass": true
+  },
+  {
+    "name": "mobile second proposal visible",
+    "pass": true
+  },
+  {
+    "name": "mobile first hidden",
+    "pass": true
+  },
+  {
+    "name": "mobile no viewport horizontal overflow",
+    "pass": true
+  },
+  {
+    "name": "mobile next works",
+    "pass": true
+  },
+  {
+    "name": "mobile back works",
+    "pass": true
+  },
+  {
+    "name": "mobile no runtime JS errors",
+    "pass": true
+  },
+  {
+    "name": "small page loaded",
+    "pass": true
+  },
+  {
+    "name": "small idea step shown",
+    "pass": true
+  },
+  {
+    "name": "small 2 tabs",
+    "pass": true
+  },
+  {
+    "name": "small default receipt image",
+    "pass": true
+  },
+  {
+    "name": "small receipt switches",
+    "pass": true
+  },
+  {
+    "name": "small new receipt image",
+    "pass": true
+  },
+  {
+    "name": "small second proposal visible",
+    "pass": true
+  },
+  {
+    "name": "small first hidden",
+    "pass": true
+  },
+  {
+    "name": "small no viewport horizontal overflow",
+    "pass": true
+  },
+  {
+    "name": "small next works",
+    "pass": true
+  },
+  {
+    "name": "small back works",
+    "pass": true
+  },
+  {
+    "name": "small no runtime JS errors",
+    "pass": true
+  }
+]

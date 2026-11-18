@@ -1,22 +1,43 @@
-# THE APPLICATION.exe — A.R.T. FUSION · Launch Ready
+# THE APPLICATION.exe — AF-FINAL-20261117
 
-## Vizualizare locală
-1. **Extrage integral arhiva** într-un folder. Nu deschide `index.html` direct din previzualizarea ZIP-ului.
-2. Deschide `index.html` în Chrome/Edge. Fișierele `assets/` și `docs/` trebuie păstrate lângă acesta.
-3. Folosește **Start / Next / Back**, punctele de progres și comutarea Poster / Stories.
-4. Pentru video, apasă Play; dacă browserul local îl blochează, folosește linkul „Deschide videoclipul separat”.
+**Este un website static, nu un program care trebuie instalat.**
 
-## Publicare pe GitHub Pages (numai cu acordul proprietarului)
-1. Creează un repository public pe GitHub, de exemplu `art-fusion-application`.
-2. Încarcă **conținutul extras** al acestui folder în rădăcina repository-ului (`index.html`, `style.css`, `wizard.css`, `wizard.js`, `assets/`, `docs/`). Nu încărca ZIP-ul ca un singur fișier.
-3. În repository: **Settings → Pages → Build and deployment → Deploy from a branch**.
-4. Selectează `main` și folderul `/(root)`, apoi **Save**.
-5. Adresa va avea forma `https://UTILIZATOR.github.io/art-fusion-application/` (înlocuiește cu utilizatorul și numele real al repository-ului).
-6. Verifică **toate 5 ecranele**, taburile Poster/Stories, redarea completă a videoului, deschiderea PDF-urilor, butonul E-mail și linkul Google Meet. Testează pe PC și telefon.
-7. Adaugă URL-ul public în candidatura prin e-mail. În CV se poate adăuga ulterior dacă dorești.
+## Conținutul corect al proiectului
+```
+CVAC/
+├── index.html
+├── style.css
+├── wizard.css
+├── wizard.js
+├── assets/
+│   ├── detaillane-demo-v2.mp4
+│   ├── detaillane-poster-v2.jpg
+│   ├── favicon.svg
+│   └── (restul imaginilor și SVG-urilor)
+├── docs/
+│   ├── CV_Andrei_Catana_ART_FUSION.pdf
+│   └── Scrisoare_Motivatie_ART_FUSION.pdf
+└── (fișierele README și rapoartele QA)
+```
 
-## Observații
-- Proiectul „Ce-ai schimba?” este o propunere personală, nu o campanie oficială A.R.T. FUSION.
-- Datele personale introduse în website vor fi vizibile public dacă activezi GitHub Pages. Un `noindex` a fost adăugat, însă nu garantează confidențialitatea.
-- Studiile ASE sunt menționate drept întrerupte. Disponibilitatea de relocare: ianuarie 2027.
-- Raportul de QA precizează limitările testării prin browser.
+## Publicare în https://github.com/andreikat03/CVAC
+1. Descarcă și extrage `THE_APPLICATION_ART_FUSION_FINAL.zip`.
+2. În GitHub, verifică ramura `main`. Încarcă **conținutul arhivei**, nu arhiva ZIP ca atare. Păstrează obligatoriu directoarele `assets/` și `docs/`.
+3. În interfața GitHub poți folosi **Add file → Upload files** și poți trage fișierele/directoarele din folderul extras. Verifică, înainte de commit, că GitHub afișează căile `assets/detaillane-demo-v2.mp4` și `docs/CV_Andrei_Catana_ART_FUSION.pdf`.
+4. Apasă **Commit changes**. Dacă vrei să folosești Git local, copiază fișierele în checkout-ul CVAC și rulează `git add -A`, `git commit -m "Final A.R.T. Fusion CV"`, `git push origin main`.
+5. În **Settings → Pages**, folosește **Deploy from a branch**, ramura `main`, directorul `/(root)`.
+6. Verifică în mod privat / incognito, pe PC și pe telefon:
+   - `https://andreikat03.github.io/CVAC/`
+   - `https://andreikat03.github.io/CVAC/#proiecte`
+   - `https://andreikat03.github.io/CVAC/assets/detaillane-demo-v2.mp4`
+   - `https://andreikat03.github.io/CVAC/docs/CV_Andrei_Catana_ART_FUSION.pdf`
+   - `https://andreikat03.github.io/CVAC/docs/Scrisoare_Motivatie_ART_FUSION.pdf`
+7. Verifică navigarea, posterul, taburile, videoclipul de la prima vizită (fără refresh), apoi linkul Google Meet cu un cont de test.
+
+### Important despre repository-ul actual
+În momentul comparației, fișierele media și PDF-urile erau prezente la rădăcina repository-ului. **Nu încerca să repari doar un link**: publică structura de directoare din acest ZIP. Fișierele vechi de la rădăcină pot rămâne temporar, dar aplicația finală folosește `assets/` și `docs/`.
+
+### Note
+- Nu există build npm, instalator sau server backend. Se poate deschide local cu `index.html`, dar pentru un test concludent al redării video și linkurilor recomand GitHub Pages.
+- Linkul Google Meet și denumirea exactă a rolului au nevoie de confirmare manuală înainte de trimitere.
+- Raportul QA este transparent privind testele care nu au putut fi executate în site-ul public.
