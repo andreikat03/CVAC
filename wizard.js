@@ -137,6 +137,43 @@
   };
   const receiptImg=document.getElementById('receiptMain');
   const receiptButtons=[...document.querySelectorAll('.receipt-choice')];
+  // A configured local mail client is not guaranteed. Open a webmail chooser
+  // instead of an inert mailto: protocol, with an always-visible copy fallback.
+  const emailDialog=document.getElementById('emailDialog');
+  const emailContactButton=document.getElementById('emailContactButton');
+  const emailFooterButton=document.getElementById('emailFooterButton');
+  const emailDialogClose=document.getElementById('emailDialogClose');
+  const emailAddressField=document.getElementById('emailAddressField');
+  const emailCopyButton=document.getElementById('emailCopyButton');
+  const emailCopyStatus=document.getElementById('emailCopyStatus');
+  let emailDialogOpener=null;
+  function openEmailDialog(event){
+    emailDialogOpener=event.currentTarget;
+    emailCopyStatus.textContent='';
+    if(typeof emailDialog.showModal==='function')emailDialog.showModal();
+    else emailDialog.setAttribute('open','');
+    emailDialogClose.focus();
+  }
+  [emailContactButton,emailFooterButton].forEach(trigger=>trigger?.addEventListener('click',openEmailDialog));
+  emailDialogClose?.addEventListener('click',()=>emailDialog.close());
+  emailDialog?.addEventListener('click',event=>{
+    if(event.target===emailDialog)emailDialog.close();
+  });
+  emailDialog?.addEventListener('close',()=>emailDialogOpener?.focus({preventScroll:true}));
+  emailAddressField?.addEventListener('click',()=>emailAddressField.select());
+  emailCopyButton?.addEventListener('click',async()=>{
+    const address=emailAddressField.value;
+    let copied=false;
+    if(navigator.clipboard?.writeText){
+      try{await navigator.clipboard.writeText(address);copied=true;}catch(_error){}
+    }
+    if(!copied){
+      emailAddressField.focus();emailAddressField.select();
+      try{copied=document.execCommand('copy');}catch(_error){}
+    }
+    emailCopyStatus.textContent=copied?'Adresa a fost copiată. O poți lipi în aplicația ta de e-mail.':'Selectează adresa de mai sus și copiaz-o manual (Ctrl+C).';
+  });
+
   const receiptZoomButton=document.getElementById('receiptFull');
   const receiptDialog=document.getElementById('receiptDialog');
   const receiptDialogImage=document.getElementById('receiptDialogImage');

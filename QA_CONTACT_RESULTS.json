@@ -1,0 +1,407 @@
+[
+  {
+    "screen": "desktop",
+    "check": "contact page visible",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "contact button visible",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "contact is button not mailto",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "main button has accessible dialog control",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "footer is not mailto",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "dialog opens",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "dialog title",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "address correct",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "two webmail choices",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Gmail is https",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Gmail target email included",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Gmail subject included",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Gmail opens new tab",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Outlook is https",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Outlook target email included",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Outlook subject included",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Outlook opens new tab",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "copy shows success",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "copy fallback used",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "Escape closes dialog",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "focus restored after close",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "footer opens same dialog",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "close button closes dialog",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "receipt modal still working",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "receipt closes",
+    "pass": true
+  },
+  {
+    "screen": "desktop",
+    "check": "no JS errors",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "contact page visible",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "contact button visible",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "contact is button not mailto",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "main button has accessible dialog control",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "footer is not mailto",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "dialog opens",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "dialog title",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "address correct",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "two webmail choices",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Gmail is https",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Gmail target email included",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Gmail subject included",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Gmail opens new tab",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Outlook is https",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Outlook target email included",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Outlook subject included",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Outlook opens new tab",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "copy shows success",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "copy fallback used",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "Escape closes dialog",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "focus restored after close",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "footer opens same dialog",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "close button closes dialog",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "receipt modal still working",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "receipt closes",
+    "pass": true
+  },
+  {
+    "screen": "mobile",
+    "check": "no JS errors",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "contact page visible",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "contact button visible",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "contact is button not mailto",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "main button has accessible dialog control",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "footer is not mailto",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "dialog opens",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "dialog title",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "address correct",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "two webmail choices",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Gmail is https",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Gmail target email included",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Gmail subject included",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Gmail opens new tab",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Outlook is https",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Outlook target email included",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Outlook subject included",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Outlook opens new tab",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "copy shows success",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "copy fallback used",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "Escape closes dialog",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "focus restored after close",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "footer opens same dialog",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "close button closes dialog",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "receipt modal still working",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "receipt closes",
+    "pass": true
+  },
+  {
+    "screen": "small",
+    "check": "no JS errors",
+    "pass": true
+  }
+]

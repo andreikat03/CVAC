@@ -1,11 +1,16 @@
-# A.R.T. FUSION — versiune CV cu bon modal
+# THE APPLICATION.exe — contact e-mail reparat
 
-Deschide `index.html` pentru previzualizare locală (sau publică la rădăcina repository-ului CVAC).
+Aceasta este versiunea completă, cu fișierele pentru GitHub Pages la rădăcina arhivei.
 
-- Cele trei bonuri se măresc în aceeași pagină, cu `Mărește bonul` sau prin click pe imagine.
-- În fereastra deschisă poți folosi `Mărește 150%`, scroll pentru citire, `✕` sau tasta Escape pentru închidere.
-- Linkurile către CV PDF și scrisoarea de motivație au fost eliminate; cele două documente pot fi atașate separat în email.
-- Păstrează la upload directorul `assets/` cu fișierele necesare video-ului și imaginilor.
-- În ZIP, `index.html`, `wizard.js`, `wizard.css`, `style.css` și folderul `assets/` se află direct la rădăcină.
-- GitHub Pages trebuie publicat din `main` / `(root)`. Dacă la o versiune anterioară imaginile din `assets/` lipseau, actualizează folderul integral.
-- Nu s-a făcut publicarea în repo.
+## Contact
+- `Scrie-mi un e-mail` deschide acum o fereastră în interiorul CV-ului, nu un link `mailto:` care depinde de configurarea browserului.
+- Persoana alege **Gmail** sau **Outlook** (mesaj nou în browser cu destinatarul și subiectul completate), ori folosește **Copiază** și scrie din orice aplicație.
+- De pe site nu se poate trimite direct un mesaj fără un serviciu de e-mail sau backend; nu pretindem că s-a trimis un e-mail.
+- Click pe adresa din footer deschide același dialog.
+- Ferestrele pentru bonuri, cele două idei și celelalte secțiuni sunt păstrate.
+- CV-ul PDF și scrisoarea sunt destinate atașării separat în e-mail.
+
+## Publicare
+În repository-ul `CVAC`, suprascrie fișierele vechi cu **conținutul** arhivei: `index.html`, `style.css`, `wizard.css`, `wizard.js`, `assets/`.
+GitHub Pages: `main` / `(root)`.
+Nu am publicat sau modificat site-ul GitHub.
